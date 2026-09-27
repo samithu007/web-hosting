@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MediFlow — Patient Registration Form</title><link rel="stylesheet" href="../css/style.css"></head>
+<body style="padding:32px;background:#f4f8fc">
+<main class="panel" style="max-width:900px;margin:auto">
+<div class="panel-head"><div><h2>Patient Registration Form</h2><p class="sub">Standalone reference layout. The live application uses <code>js/forms/patient-registration.js</code>.</p></div></div>
+<form class="form-grid" id="patientRegistrationReference">
+<label>Full name<input id="rName" required placeholder="Kasun Silva"></label>
+<label>NIC <span class="field-hint">Optional</span><input id="rNic" placeholder="200012345678 or 991234567V"></label>
+<label>Mobile number<input id="rPhone" required placeholder="07XXXXXXXX"></label>
+<label>Email<input id="rEmail" type="email" required placeholder="you@example.com"></label>
+<label>Date of birth<input id="rDob" type="date" required></label>
+<label>Gender<select id="rGender" required><option value="">Select gender</option><option>Male</option><option>Female</option></select></label>
+<label>Address<input id="rAddress" placeholder="Your address"></label>
+<label>Emergency contact name<input id="rEmergencyName"></label>
+<label>Emergency contact phone<input id="rEmergencyPhone" placeholder="07XXXXXXXX"></label>
+<div class="full-col alert info"><b>Validation:</b> NIC is optional. If entered and valid, DOB and gender are derived automatically. Emergency phone is optional.</div>
+</form></main></body></html>
